@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events – Paws United Dog Owners Union</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paw: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            warm: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-paw-500 to-paw-700 rounded-full flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <i class="fas fa-paw text-white text-lg md:text-xl"></i>
+          </div>
+          <div>
+            <span class="font-display text-xl md:text-2xl font-bold text-paw-800">Paws United</span>
+            <span class="hidden sm:block text-xs text-paw-600 -mt-1">Dog Owners Union</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="events.html" class="nav-link active">Events</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="join.html" class="ml-3 px-5 py-2.5 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-200">Join Us</a>
+        </nav>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-lg text-paw-700 hover:bg-paw-50 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="resources.html" class="mobile-nav-link">Resources</a>
+        <a href="events.html" class="mobile-nav-link active">Events</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="join.html" class="block mt-3 text-center px-5 py-3 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="pt-28 md:pt-32 pb-12 bg-gradient-to-br from-paw-800 to-paw-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Upcoming Events</h1>
+      <p class="text-xl text-paw-100 max-w-2xl">Join us for walks, workshops, clean-ups, and community gatherings. All events welcome well-behaved dogs unless noted.</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <!-- Event 1 -->
+      <div class="bg-paw-50 border border-paw-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-shrink-0 w-20 h-20 bg-paw-500 text-white rounded-2xl flex flex-col items-center justify-center">
+          <span class="text-xs font-bold uppercase">Aug</span>
+          <span class="text-3xl font-bold">15</span>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-paw-900 mb-2">Morning Pack Walk</h2>
+          <p class="text-gray-600 mb-3"><i class="fas fa-map-marker-alt text-paw-500 mr-2"></i>Riverside Park – Main Entrance • 8:00 AM</p>
+          <p class="text-gray-700 mb-4">A relaxed social walk for dogs of all sizes. We provide waste bags and a short briefing on trail etiquette. Great for meeting other members.</p>
+          <span class="inline-block px-3 py-1 bg-paw-100 text-paw-700 text-sm rounded-full">Free • Dogs welcome</span>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="bg-warm-50 border border-warm-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-shrink-0 w-20 h-20 bg-warm-500 text-white rounded-2xl flex flex-col items-center justify-center">
+          <span class="text-xs font-bold uppercase">Aug</span>
+          <span class="text-3xl font-bold">22</span>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-paw-900 mb-2">Sanitation Awareness Day</h2>
+          <p class="text-gray-600 mb-3"><i class="fas fa-map-marker-alt text-warm-500 mr-2"></i>City Dog Park • 9:00 AM – 12:00 PM</p>
+          <p class="text-gray-700 mb-4">Free biodegradable bags, short talks on why cleanup matters, and a volunteer clean-up session. Help us keep the park pristine!</p>
+          <span class="inline-block px-3 py-1 bg-warm-100 text-warm-700 text-sm rounded-full">Free • Volunteers needed</span>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="bg-sky-50 border border-sky-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-shrink-0 w-20 h-20 bg-sky-500 text-white rounded-2xl flex flex-col items-center justify-center">
+          <span class="text-xs font-bold uppercase">Sep</span>
+          <span class="text-3xl font-bold">05</span>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-paw-900 mb-2">Basic Obedience Workshop</h2>
+          <p class="text-gray-600 mb-3"><i class="fas fa-map-marker-alt text-sky-500 mr-2"></i>Community Center Hall B • 10:00 AM – 12:00 PM</p>
+          <p class="text-gray-700 mb-4">Hands-on session covering sit, stay, recall, and loose-leash walking. Suitable for new owners and dogs that need a refresh. Limited to 12 dogs.</p>
+          <span class="inline-block px-3 py-1 bg-sky-100 text-sky-700 text-sm rounded-full">Members priority • Small fee</span>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-shrink-0 w-20 h-20 bg-emerald-500 text-white rounded-2xl flex flex-col items-center justify-center">
+          <span class="text-xs font-bold uppercase">Sep</span>
+          <span class="text-3xl font-bold">19</span>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-semibold text-paw-900 mb-2">Autumn Social Meetup</h2>
+          <p class="text-gray-600 mb-3"><i class="fas fa-map-marker-alt text-emerald-500 mr-2"></i>Lakeside Meadow • 4:00 PM</p>
+          <p class="text-gray-700 mb-4">Bring a blanket, some treats for sharing, and meet fellow members. Informal chat, photo opportunities, and a short group walk.</p>
+          <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-sm rounded-full">Free • Dogs welcome</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 mt-12 text-center">
+      <p class="text-gray-600 mb-4">Want to host or suggest an event?</p>
+      <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-paw-600 hover:bg-paw-700 text-white font-semibold rounded-full transition-colors">
+        Get in Touch <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-paw-900 text-paw-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-t border-paw-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-paw-400">
+        <p>&copy; 2026 Paws United – Dog Owners Union. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-warm-500"></i> for dogs everywhere.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

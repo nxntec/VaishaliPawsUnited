@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Paws United Dog Owners Union</title>
+  <meta name="description" content="Photos from our community walks, meetups, and everyday moments with our dogs.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paw: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            warm: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-paw-500 to-paw-700 rounded-full flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <i class="fas fa-paw text-white text-lg md:text-xl"></i>
+          </div>
+          <div>
+            <span class="font-display text-xl md:text-2xl font-bold text-paw-800">Paws United</span>
+            <span class="hidden sm:block text-xs text-paw-600 -mt-1">Dog Owners Union</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="gallery.html" class="nav-link active">Gallery</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="join.html" class="ml-3 px-5 py-2.5 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-200">Join Us</a>
+        </nav>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-lg text-paw-700 hover:bg-paw-50 focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="gallery.html" class="mobile-nav-link active">Gallery</a>
+        <a href="resources.html" class="mobile-nav-link">Resources</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="join.html" class="block mt-3 text-center px-5 py-3 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="pt-28 md:pt-32 pb-12 bg-gradient-to-br from-paw-800 to-paw-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Community Gallery</h1>
+      <p class="text-xl text-paw-100 max-w-2xl">Snapshots of joy, friendship, and responsible ownership from our members. Click any photo to enlarge.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+        <!-- Images with data-lightbox -->
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=80" alt="Happy golden retriever in park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=800&q=80" alt="Dog running freely" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Two dogs playing together" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=800&q=80" alt="Owner walking dog on trail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?auto=format&fit=crop&w=800&q=80" alt="Cute dog portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Golden retriever smiling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" alt="Dog with tongue out" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Puppy looking at camera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=80" alt="Dog on leash in city" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&w=800&q=80" alt="Black dog in nature" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=800&q=80" alt="Dog sitting patiently" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-xl group">
+          <img data-lightbox src="https://images.unsplash.com/photo-1507146426996-ef05306b95a0?auto=format&fit=crop&w=800&q=80" alt="Group of dogs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-gray-600 mb-4">Want to share your photos with the community?</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-paw-600 hover:bg-paw-700 text-white font-semibold rounded-full transition-colors">
+          <i class="fas fa-camera"></i> Submit Your Photos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-paw-900 text-paw-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-paw-500 rounded-full flex items-center justify-center">
+              <i class="fas fa-paw text-white"></i>
+            </div>
+            <span class="font-display text-xl font-bold text-white">Paws United</span>
+          </div>
+          <p class="text-paw-300 text-sm leading-relaxed">The community for responsible dog owners who care about clean parks, happy dogs, and stronger neighborhoods.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
+            <li><a href="events.html" class="hover:text-white transition-colors">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="resources.html#sanitation" class="hover:text-white transition-colors">Sanitation Guide</a></li>
+            <li><a href="resources.html#walking" class="hover:text-white transition-colors">Walking Etiquette</a></li>
+            <li><a href="resources.html#health" class="hover:text-white transition-colors">Health & Safety</a></li>
+            <li><a href="join.html" class="hover:text-white transition-colors">Become a Member</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Stay Connected</h4>
+          <p class="text-sm text-paw-300 mb-4">Get monthly tips and event updates.</p>
+          <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-lg bg-paw-800 border border-paw-700 text-white placeholder-paw-400 focus:outline-none focus:ring-2 focus:ring-paw-500 text-sm">
+            <button type="submit" class="px-4 py-2.5 bg-warm-500 hover:bg-warm-600 rounded-lg text-white transition-colors">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-paw-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-paw-400">
+        <p>&copy; 2026 Paws United – Dog Owners Union. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-warm-500"></i> for dogs everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

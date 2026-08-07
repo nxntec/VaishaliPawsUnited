@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources – Paws United Dog Owners Union</title>
+  <meta name="description" content="Practical guides on dog sanitation while walking, leash etiquette, health & safety, and responsible ownership.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paw: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            warm: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-paw-500 to-paw-700 rounded-full flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <i class="fas fa-paw text-white text-lg md:text-xl"></i>
+          </div>
+          <div>
+            <span class="font-display text-xl md:text-2xl font-bold text-paw-800">Paws United</span>
+            <span class="hidden sm:block text-xs text-paw-600 -mt-1">Dog Owners Union</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="resources.html" class="nav-link active">Resources</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="join.html" class="ml-3 px-5 py-2.5 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-200">Join Us</a>
+        </nav>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-lg text-paw-700 hover:bg-paw-50 focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="resources.html" class="mobile-nav-link active">Resources</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="join.html" class="block mt-3 text-center px-5 py-3 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="pt-28 md:pt-32 pb-12 bg-gradient-to-br from-paw-800 to-paw-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Owner Resources</h1>
+      <p class="text-xl text-paw-100 max-w-2xl">Practical, no-nonsense guides to help you be the best dog owner you can be — starting with the basics that keep communities clean and safe.</p>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="bg-white border-b border-gray-200 sticky top-16 md:top-20 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex gap-2 overflow-x-auto py-3 scrollbar-hide">
+        <a href="#sanitation" class="flex-shrink-0 px-4 py-2 bg-paw-100 text-paw-800 rounded-full text-sm font-medium hover:bg-paw-200 transition-colors">Sanitation</a>
+        <a href="#walking" class="flex-shrink-0 px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Walking Etiquette</a>
+        <a href="#health" class="flex-shrink-0 px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Health & Safety</a>
+        <a href="#training" class="flex-shrink-0 px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Training Basics</a>
+        <a href="#legal" class="flex-shrink-0 px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">Local Rules</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sanitation Section -->
+  <section id="sanitation" class="py-16 md:py-20 bg-white scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 bg-paw-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-broom text-white text-xl"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold text-paw-900">Sanitation While Walking</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-6">
+          <div class="bg-paw-50 border border-paw-100 rounded-2xl p-6 md:p-8">
+            <h3 class="text-xl font-semibold text-paw-900 mb-4">The Golden Rule</h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>If your dog leaves it, you take it.</strong> No exceptions — not in the woods, not at night, not when “no one is watching.” Dog waste is a public health and environmental issue.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-4">Why It Matters</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex gap-3">
+                <i class="fas fa-virus text-paw-500 mt-1"></i>
+                <span><strong>Health risk:</strong> Dog feces can contain parasites (roundworm, giardia), bacteria (E. coli, salmonella), and viruses that affect people, especially children, and other animals.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fas fa-water text-paw-500 mt-1"></i>
+                <span><strong>Water pollution:</strong> Rain washes waste into storm drains and waterways, contributing to algae blooms and harming aquatic life.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fas fa-shoe-prints text-paw-500 mt-1"></i>
+                <span><strong>Shared spaces:</strong> Parks, trails, and sidewalks become unpleasant and unsafe when littered with waste. It reflects poorly on all dog owners.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fas fa-gavel text-paw-500 mt-1"></i>
+                <span><strong>Legal:</strong> Most cities have ordinances requiring cleanup. Fines can be significant, and repeated offenses may lead to further restrictions on dogs.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-4">Best Practices Checklist</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-shopping-bag"></i> Always Carry Bags
+                </div>
+                <p class="text-sm text-gray-600">Keep 2–3 biodegradable bags in your pocket, leash pouch, or bag. Never leave home without them.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-hand-holding"></i> Pick Up Immediately
+                </div>
+                <p class="text-sm text-gray-600">Don’t wait. Scoop right away so it doesn’t get stepped on or washed away.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-trash-alt"></i> Dispose Properly
+                </div>
+                <p class="text-sm text-gray-600">Use dedicated dog-waste bins when available. Otherwise take it home and put it in your household trash.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-leaf"></i> Choose Eco Bags
+                </div>
+                <p class="text-sm text-gray-600">Prefer compostable or biodegradable bags. Avoid single-use plastic when possible.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-moon"></i> Night Walks Count
+                </div>
+                <p class="text-sm text-gray-600">Carry a small flashlight or use your phone light so you can see and clean up in the dark.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center gap-2 mb-2 text-paw-700 font-semibold">
+                  <i class="fas fa-child"></i> Teach the Next Generation
+                </div>
+                <p class="text-sm text-gray-600">Involve kids in the cleanup process so the habit becomes second nature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar tips -->
+        <div class="space-y-6">
+          <div class="bg-warm-50 border border-warm-200 rounded-2xl p-6">
+            <h4 class="font-semibold text-warm-800 mb-3 flex items-center gap-2">
+              <i class="fas fa-lightbulb"></i> Pro Tip
+            </h4>
+            <p class="text-sm text-warm-900 leading-relaxed">Keep a small roll of bags clipped to your leash or keychain. Many owners forget bags at home — a permanent attachment solves that forever.</p>
+          </div>
+          <div class="bg-sky-50 border border-sky-200 rounded-2xl p-6">
+            <h4 class="font-semibold text-sky-800 mb-3 flex items-center gap-2">
+              <i class="fas fa-question-circle"></i> What About “Natural” Areas?
+            </h4>
+            <p class="text-sm text-sky-900 leading-relaxed">Even in forests or large parks, pick it up. Dog waste is not the same as wildlife droppings and can introduce non-native pathogens into ecosystems.</p>
+          </div>
+          <div class="bg-rose-50 border border-rose-200 rounded-2xl p-6">
+            <h4 class="font-semibold text-rose-800 mb-3 flex items-center gap-2">
+              <i class="fas fa-exclamation-triangle"></i> Never Flush or Compost
+            </h4>
+            <p class="text-sm text-rose-900 leading-relaxed">Most municipal systems and home composts are not designed for dog waste. Bag it and put it in the trash (or use approved dog-waste composting systems if available).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Walking Etiquette -->
+  <section id="walking" class="py-16 md:py-20 bg-gray-50 scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 bg-warm-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-dog text-white text-xl"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold text-paw-900">Walking Etiquette</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
+          <h3 class="text-lg font-semibold text-paw-900 mb-4">On the Leash</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Keep your dog under control at all times — short leash in busy areas.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Yield to pedestrians, cyclists, and other dogs when space is tight.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Ask before allowing your dog to approach another dog or person.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Prevent your dog from jumping on people or lunging at other animals.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Be especially careful around children and people who appear uncomfortable.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
+          <h3 class="text-lg font-semibold text-paw-900 mb-4">In Parks & Off-Leash Areas</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Only use designated off-leash zones and follow posted rules.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Ensure your dog is well socialized and recalls reliably before going off-leash.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Watch for signs of stress or aggression and intervene early.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Share the space — don’t let one dog dominate the entire area.</li>
+            <li class="flex gap-3"><i class="fas fa-check text-paw-500 mt-1"></i> Leave if your dog is overstimulated or if conflicts arise.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health & Safety -->
+  <section id="health" class="py-16 md:py-20 bg-white scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-heartbeat text-white text-xl"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold text-paw-900">Health & Safety</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-sky-50 rounded-2xl p-6 border border-sky-100">
+          <h3 class="font-semibold text-lg text-paw-900 mb-3">Hot Weather</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>• Walk early morning or late evening</li>
+            <li>• Test pavement with the back of your hand</li>
+            <li>• Carry water for both of you</li>
+            <li>• Watch for excessive panting or lethargy</li>
+            <li>• Never leave a dog in a parked car</li>
+          </ul>
+        </div>
+        <div class="bg-amber-50 rounded-2xl p-6 border border-amber-100">
+          <h3 class="font-semibold text-lg text-paw-900 mb-3">Cold & Wet</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>• Shorten walks in extreme cold</li>
+            <li>• Consider booties for ice and salt</li>
+            <li>• Dry paws and belly after wet walks</li>
+            <li>• Watch for ice balls between toes</li>
+            <li>• Provide a warm, dry place to rest</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
+          <h3 class="font-semibold text-lg text-paw-900 mb-3">General Safety</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>• Keep vaccinations and parasite prevention up to date</li>
+            <li>• Use a sturdy, well-fitted harness or collar</li>
+            <li>• Microchip + ID tag with current phone number</li>
+            <li>• Avoid toxic plants, antifreeze, and garbage</li>
+            <li>• Know the location of the nearest emergency vet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Basics -->
+  <section id="training" class="py-16 md:py-20 bg-gray-50 scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 bg-violet-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-graduation-cap text-white text-xl"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold text-paw-900">Training Basics</h2>
+      </div>
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 max-w-4xl">
+        <p class="text-gray-700 mb-6 leading-relaxed">A well-trained dog is safer, happier, and more welcome in public spaces. Focus on positive reinforcement and consistency.</p>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold text-paw-800 mb-2">Essential Cues</h4>
+            <ul class="text-gray-700 space-y-1 text-sm">
+              <li>• Sit / Stay / Down</li>
+              <li>• Come (reliable recall)</li>
+              <li>• Leave it / Drop it</li>
+              <li>• Loose-leash walking</li>
+              <li>• Place / Go to bed</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-paw-800 mb-2">Tips for Success</h4>
+            <ul class="text-gray-700 space-y-1 text-sm">
+              <li>• Short, frequent sessions (5–10 min)</li>
+              <li>• High-value rewards for hard tasks</li>
+              <li>• Practice in gradually harder environments</li>
+              <li>• Never punish fear or confusion</li>
+              <li>• Consider a qualified positive trainer for help</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Rules -->
+  <section id="legal" class="py-16 md:py-20 bg-white scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 bg-rose-500 rounded-xl flex items-center justify-center">
+          <i class="fas fa-balance-scale text-white text-xl"></i>
+        </div>
+        <h2 class="font-display text-3xl font-bold text-paw-900">Know Your Local Rules</h2>
+      </div>
+      <div class="bg-rose-50 border border-rose-100 rounded-2xl p-6 md:p-8 max-w-4xl">
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          Laws vary by city and country. Common requirements include:
+        </p>
+        <ul class="space-y-2 text-gray-700 mb-6">
+          <li class="flex gap-2"><i class="fas fa-chevron-right text-rose-500 mt-1"></i> Mandatory cleanup of dog waste (often with fines)</li>
+          <li class="flex gap-2"><i class="fas fa-chevron-right text-rose-500 mt-1"></i> Leash requirements in public areas (length limits sometimes apply)</li>
+          <li class="flex gap-2"><i class="fas fa-chevron-right text-rose-500 mt-1"></i> Licensing and vaccination records</li>
+          <li class="flex gap-2"><i class="fas fa-chevron-right text-rose-500 mt-1"></i> Restrictions on certain breeds or numbers of dogs</li>
+          <li class="flex gap-2"><i class="fas fa-chevron-right text-rose-500 mt-1"></i> Designated off-leash zones only</li>
+        </ul>
+        <p class="text-sm text-gray-600">
+          Check your local council or municipal website for the exact ordinances where you live. When in doubt, keep your dog leashed and always clean up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-paw-800 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <p class="text-lg mb-4">Have a tip or resource to share with the community?</p>
+      <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-warm-500 hover:bg-warm-600 rounded-full font-semibold transition-colors">
+        Contact Us <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-paw-900 text-paw-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-paw-500 rounded-full flex items-center justify-center">
+              <i class="fas fa-paw text-white"></i>
+            </div>
+            <span class="font-display text-xl font-bold text-white">Paws United</span>
+          </div>
+          <p class="text-paw-300 text-sm leading-relaxed">The community for responsible dog owners who care about clean parks, happy dogs, and stronger neighborhoods.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
+            <li><a href="events.html" class="hover:text-white transition-colors">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="resources.html#sanitation" class="hover:text-white transition-colors">Sanitation Guide</a></li>
+            <li><a href="resources.html#walking" class="hover:text-white transition-colors">Walking Etiquette</a></li>
+            <li><a href="resources.html#health" class="hover:text-white transition-colors">Health & Safety</a></li>
+            <li><a href="join.html" class="hover:text-white transition-colors">Become a Member</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Stay Connected</h4>
+          <p class="text-sm text-paw-300 mb-4">Get monthly tips and event updates.</p>
+          <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-lg bg-paw-800 border border-paw-700 text-white placeholder-paw-400 focus:outline-none focus:ring-2 focus:ring-paw-500 text-sm">
+            <button type="submit" class="px-4 py-2.5 bg-warm-500 hover:bg-warm-600 rounded-lg text-white transition-colors">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-paw-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-paw-400">
+        <p>&copy; 2026 Paws United – Dog Owners Union. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-warm-500"></i> for dogs everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

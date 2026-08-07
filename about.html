@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Paws United Dog Owners Union</title>
+  <meta name="description" content="Learn about Paws United – our mission, values, and how we support responsible dog ownership.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paw: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            warm: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-paw-500 to-paw-700 rounded-full flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <i class="fas fa-paw text-white text-lg md:text-xl"></i>
+          </div>
+          <div>
+            <span class="font-display text-xl md:text-2xl font-bold text-paw-800">Paws United</span>
+            <span class="hidden sm:block text-xs text-paw-600 -mt-1">Dog Owners Union</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="join.html" class="ml-3 px-5 py-2.5 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-200">Join Us</a>
+        </nav>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-lg text-paw-700 hover:bg-paw-50 focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link active">About</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="resources.html" class="mobile-nav-link">Resources</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="join.html" class="block mt-3 text-center px-5 py-3 bg-warm-500 hover:bg-warm-600 text-white font-medium rounded-full">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="pt-28 md:pt-32 pb-16 bg-gradient-to-br from-paw-800 to-paw-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">About Paws United</h1>
+        <p class="text-xl text-paw-100">A grassroots community of dog owners dedicated to responsible ownership, clean shared spaces, and happier lives for our four-legged family members.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display text-3xl font-bold text-paw-900 mb-6">Our Mission</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            Paws United was founded by a group of everyday dog owners who were tired of dirty parks, unclear rules, and the lack of a supportive network. We believe that responsible dog ownership benefits everyone — dogs, owners, and the wider community.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            We focus on education, practical support, and positive advocacy. Whether it's teaching new owners how to handle walks properly, organizing clean-up days, or speaking up for more dog-friendly spaces, we are stronger together.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center gap-2 text-paw-700 font-medium">
+              <i class="fas fa-check-circle text-paw-500"></i> Free membership
+            </div>
+            <div class="flex items-center gap-2 text-paw-700 font-medium">
+              <i class="fas fa-check-circle text-paw-500"></i> Local chapters
+            </div>
+            <div class="flex items-center gap-2 text-paw-700 font-medium">
+              <i class="fas fa-check-circle text-paw-500"></i> Volunteer-driven
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=80" alt="Dog owners community" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-16 md:py-20 bg-paw-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl font-bold text-paw-900 text-center mb-12">Our Core Values</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-paw-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-hands-helping text-paw-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Responsibility</h3>
+          <p class="text-gray-600">We take ownership of our dogs' impact on the world — from waste disposal to noise and behavior in public spaces.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-warm-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-heart text-warm-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Compassion</h3>
+          <p class="text-gray-600">Every dog deserves kindness, proper care, and a chance at a good life. We support rescue and rehoming efforts.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-users text-sky-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Community</h3>
+          <p class="text-gray-600">No owner should feel isolated. We create spaces to share knowledge, celebrate wins, and help each other through challenges.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-leaf text-emerald-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Environment</h3>
+          <p class="text-gray-600">Clean parks, healthy waterways, and protected wildlife start with every bag we pick up and every trail we respect.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-balance-scale text-violet-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Fairness</h3>
+          <p class="text-gray-600">We advocate for balanced policies that protect public spaces while giving dogs and their owners the access they need.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-paw-100">
+          <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-lightbulb text-rose-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-paw-900 mb-3">Lifelong Learning</h3>
+          <p class="text-gray-600">Training, health, and behavior knowledge evolve. We stay curious and share reliable, up-to-date information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl font-bold text-paw-900 text-center mb-4">What We Do</h2>
+      <p class="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">Practical actions that make a real difference for dogs and neighborhoods.</p>
+      
+      <div class="space-y-8 max-w-4xl mx-auto">
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-paw-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-2">Education & Resources</h3>
+            <p class="text-gray-600">Free guides on sanitation, leash etiquette, seasonal care, training basics, and local laws. Our blog and resource library are open to everyone.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-paw-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-2">Community Events</h3>
+            <p class="text-gray-600">Pack walks, clean-up days, workshops, and social meetups. We make it easy and fun to connect with like-minded owners.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-paw-500 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-2">Advocacy</h3>
+            <p class="text-gray-600">We engage with local councils and park authorities to improve facilities, add more waste stations, and protect access to green spaces.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-paw-500 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
+          <div>
+            <h3 class="text-xl font-semibold text-paw-900 mb-2">Mutual Support</h3>
+            <p class="text-gray-600">Member directory (opt-in), lost & found alerts, recommendations for vets and trainers, and a friendly space to ask questions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-paw-600 to-paw-800 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Be Part of the Change</h2>
+      <p class="text-paw-100 text-lg mb-8">Membership is free and open to all dog owners who share our values.</p>
+      <a href="join.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-paw-800 font-bold rounded-full shadow-lg hover:bg-paw-50 transition-all">
+        Join Paws United <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-paw-900 text-paw-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-paw-500 rounded-full flex items-center justify-center">
+              <i class="fas fa-paw text-white"></i>
+            </div>
+            <span class="font-display text-xl font-bold text-white">Paws United</span>
+          </div>
+          <p class="text-paw-300 text-sm leading-relaxed">The community for responsible dog owners who care about clean parks, happy dogs, and stronger neighborhoods.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
+            <li><a href="events.html" class="hover:text-white transition-colors">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="resources.html#sanitation" class="hover:text-white transition-colors">Sanitation Guide</a></li>
+            <li><a href="resources.html#walking" class="hover:text-white transition-colors">Walking Etiquette</a></li>
+            <li><a href="resources.html#health" class="hover:text-white transition-colors">Health & Safety</a></li>
+            <li><a href="join.html" class="hover:text-white transition-colors">Become a Member</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Stay Connected</h4>
+          <p class="text-sm text-paw-300 mb-4">Get monthly tips and event updates.</p>
+          <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-lg bg-paw-800 border border-paw-700 text-white placeholder-paw-400 focus:outline-none focus:ring-2 focus:ring-paw-500 text-sm">
+            <button type="submit" class="px-4 py-2.5 bg-warm-500 hover:bg-warm-600 rounded-lg text-white transition-colors">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-paw-800 hover:bg-paw-700 flex items-center justify-center transition-colors"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-paw-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-paw-400">
+        <p>&copy; 2026 Paws United – Dog Owners Union. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-warm-500"></i> for dogs everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
